@@ -7,12 +7,87 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textViewTitulo"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="28dp"
+        android:background="#080B7C"
+        android:gravity="center_horizontal"
+        android:text="@string/bienvenido_al_banco_pn"
+        android:textColor="#FBFBFB"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#FEFAFD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="@+id/textViewTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonSaldo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_saldo" />
+
+            <RadioButton
+                android:id="@+id/radioButtonIngresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ingresar" />
+
+            <RadioButton
+                android:id="@+id/radioButtonRetirar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/retirar" />
+
+            <RadioButton
+                android:id="@+id/radioButtonSalir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/salir" />
+        </RadioGroup>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/editTextSup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/ingrese_monto"
+        android:inputType="text"
+        android:textColorHint="#8D6E63"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTitulo"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <Button
+        android:id="@+id/buttonOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="@string/ok"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSup"
+        app:layout_constraintStart_toStartOf="@+id/editTextSup"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSup"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

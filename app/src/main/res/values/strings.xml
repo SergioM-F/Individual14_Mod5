@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Individual14_Mod5</string>
+    <string name="ok">Ok</string>
+    <string name="ingrese_monto">Ingrese Monto $</string>
+    <string name="salir">Salir</string>
+    <string name="retirar">Retirar</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="ver_saldo">Ver Saldo</string>
+    <string name="bienvenido_al_banco_pn">Bienvenido al Banco PN</string>
 </resources>
