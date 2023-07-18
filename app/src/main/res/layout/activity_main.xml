@@ -65,20 +65,22 @@
     </androidx.cardview.widget.CardView>
 
     <EditText
-        android:id="@+id/editTextSup"
+        android:id="@+id/editTextMonto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/ingrese_monto"
-        android:inputType="text"
+        android:inputType="number"
         android:textColorHint="#8D6E63"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/textViewTitulo"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/cardView"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="156dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/buttonOk"
@@ -86,8 +88,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
         android:text="@string/ok"
-        app:layout_constraintEnd_toEndOf="@+id/editTextSup"
-        app:layout_constraintStart_toStartOf="@+id/editTextSup"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSup"
+        app:layout_constraintEnd_toEndOf="@+id/editTextMonto"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMonto"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
